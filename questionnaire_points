@@ -1,0 +1,39 @@
+## program that creates a simple questionnaire
+## practice on flow control in python
+## file name : lab_questionnaire.py
+## created by rafael del bello oct. 2019
+
+x = 0
+age = int(input("Hi there! For this evaluation, we would need to know your current age. Please enter it now: "))
+
+if age < 20:
+    x = (x + 2)
+    print('Whoa! Your still very young, you have healthy lungs and  clean arteries !')
+elif age < 30:
+      x = (x + 2)
+      print("Okay your getting there, almost an adult! ")
+else:
+    x = (x+ 3)
+    print("Oh....Hi there you oldie, how you feeling these days?")
+
+a2 = (input("Now that we know your age, we would like to know if your a smoker. Enter yes or no : "))
+
+if a2 == 'yes':
+     x = (x+4)
+     print(x)
+
+a3 = (input("Thanks! Now tell us, have you ever had high blood pressure? Please answer yes or no"))
+
+if a3 == "yes":
+     x = (x+2)
+
+a4 = (input("Ok, and finally, do you consider having a high fat diet? Answer yes or no "))
+
+if a3 == "yes":
+    x = (x+1)
+
+print("ok you got a score of %x")
+
+
+     # else age =< 20:
+     # print('Ok gotcha. You are 20 or older')
